@@ -10,3 +10,9 @@ greeter.greetWorld()
 def a = 20
 println "the value of a is $a"
 println "the type of a is ${a.class}"
+
+def square(n){
+    n*n
+}
+
+println "square($a) is ${square(a)}"
