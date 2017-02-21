@@ -7,3 +7,6 @@ class JavaGreeter {
 }
 def greeter = new JavaGreeter()
 greeter.greetWorld()
+def a = 20
+println "the value of a is $a"
+println "the type of a is ${a.class}"
