@@ -21,3 +21,8 @@ def add(a,b) {
 println "square $a is ${square a}"
 println "addition of  1 and 2 is ${add 1,2}"
 println "addition of squares of 5 and 6 is ${add square(5),square(6)}"
+def myClosure = {
+    println "twice of $a is ${2*a}"
+    println "thrice of $a is ${3*a}"
+}
+myClosure()
