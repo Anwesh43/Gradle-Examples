@@ -7,7 +7,7 @@ class JavaGreeter {
 }
 def greeter = new JavaGreeter()
 greeter.greetWorld()
-def a = 20
+def a = 30
 println "the value of a is $a"
 println "the type of a is ${a.class}"
 
@@ -15,4 +15,4 @@ def square(n){
     n*n
 }
 
-println "square($a) is ${square(a)}"
+println "square $a is ${square a}"
