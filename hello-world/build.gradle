@@ -1,0 +1,9 @@
+task hello {
+  doFirst {
+      println "hello world"
+  }
+  doLast {
+      println "hey world"
+  }
+  println "hi world"
+}
