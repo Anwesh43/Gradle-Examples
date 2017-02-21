@@ -32,3 +32,6 @@ myClosure()
 
 def squareClos = {n->n*n}
 println "applying square of number thrice ${applyThrice(squareClos,2)}"
+
+def myList = [1,2,3,4,5,6]
+myList.each({println "double of number is ${it*2}"})
