@@ -1,2 +1,9 @@
 task groovy << {}
 println "hello world"
+class JavaGreeter {
+    public static void greetWorld() {
+        println "hey world"
+    }
+}
+def greeter = new JavaGreeter()
+greeter.greetWorld()
