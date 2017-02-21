@@ -25,4 +25,10 @@ def myClosure = {
     println "twice of $a is ${2*a}"
     println "thrice of $a is ${3*a}"
 }
+def applyThrice(func,arg) {
+    func(func(func(arg)))
+}
 myClosure()
+
+def squareClos = {n->n*n}
+println "applying square of number thrice ${applyThrice(squareClos,2)}"
