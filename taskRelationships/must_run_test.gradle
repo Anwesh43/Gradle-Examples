@@ -1,5 +1,5 @@
 task firstTask {
-    shouldRunAfter "secondTask"
+    mustRunAfter "secondTask"
     doFirst {
         println "task 1"
     }
