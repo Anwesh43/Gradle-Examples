@@ -1,0 +1,28 @@
+task firstTask {
+    doFirst {
+        println "task 1"
+    }
+}
+task secondTask {
+    doFirst {
+        println "task 2"
+    }
+}
+task thirdTask {
+    doFirst {
+        println "task 3"
+    }
+}
+task fourthTask {
+    doFirst {
+        println "task 4"
+    }
+}
+task fifthTask {
+    dependsOn = ["firstTask","secondTask","thirdTask","fourthTask"]
+    doFirst {
+        println "task 5"
+    }
+}
+firstTask.mustRunAfter secondTask
+secondTask.mustRunAfter thirdTask
