@@ -1,0 +1,11 @@
+task firstTask {
+    finalizedBy "secondTask"
+    doFirst {
+        println "this will run first"
+    }
+}
+task secondTask {
+    doFirst {
+        println "this will run second"
+    }
+}
