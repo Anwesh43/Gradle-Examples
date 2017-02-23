@@ -24,8 +24,17 @@ task fifthTask {
         println "task 5"
     }
 }
+task firstDummyTask {
+
+}
 firstTask.mustRunAfter secondTask
 secondTask.mustRunAfter thirdTask
 tasks.each {
     println "task name is ${it.name}"
 }
+
+def matchinTask  = tasks.matching {
+    it.name.startsWith "first"
+}
+println "the tasks starting with first"
+println matchinTask
