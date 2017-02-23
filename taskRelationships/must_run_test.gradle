@@ -1,0 +1,11 @@
+task firstTask {
+    shouldRunAfter "secondTask"
+    doFirst {
+        println "task 1"
+    }
+}
+task secondTask {
+    doFirst {
+        println "task 2"
+    }
+}
