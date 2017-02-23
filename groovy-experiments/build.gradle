@@ -41,3 +41,6 @@ def greetClosure = {
 }
 greetClosure.delegate = greeter
 greetClosure()
+
+def twiceOfMyList = myList.collect({it*2})
+println twiceOfMyList
