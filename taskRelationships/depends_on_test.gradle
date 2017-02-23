@@ -1,0 +1,11 @@
+task firstTask {
+    doFirst {
+        println("I will run first")
+    }
+}
+task secondTask {
+    dependsOn "firstTask"
+    doFirst {
+      println("I will run second")
+    }
+}
