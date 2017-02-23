@@ -26,3 +26,6 @@ task fifthTask {
 }
 firstTask.mustRunAfter secondTask
 secondTask.mustRunAfter thirdTask
+tasks.each {
+    println "task name is ${it.name}"
+}
