@@ -7,3 +7,6 @@ task zipImages(type:Zip) {
   baseName 'images'
   destinationDir file('build')
 }
+task deleteImages(type:Delete) {
+  delete('build')
+}
