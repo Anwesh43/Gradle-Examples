@@ -10,3 +10,7 @@ task zipImages(type:Zip) {
 task deleteImages(type:Delete) {
   delete('build')
 }
+task unzipImages(type:Copy) {
+    from zipTree('build/images.zip')
+    into 'build/images'
+}
