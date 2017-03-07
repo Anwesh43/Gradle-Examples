@@ -2,3 +2,8 @@ task copyImages(type:Copy) {
     from 'images'
     into 'build'
 }
+task zipImages(type:Zip) {
+  from 'images'
+  baseName 'images'
+  destinationDir file('build')
+}
