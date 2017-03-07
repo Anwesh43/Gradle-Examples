@@ -1,0 +1,6 @@
+fileSystemTask/build
+*/.gradle/
+*/.DS_Store
+.DS_Store
+.gradle/
+fileSystemTask/.gradle/
