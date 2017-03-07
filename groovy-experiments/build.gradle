@@ -44,3 +44,5 @@ greetClosure()
 
 def twiceOfMyList = myList.collect({it*2})
 println twiceOfMyList
+def doubleClosure = {x->x*2}
+print "the number is ${doubleClosure(doubleClosure(10))}"
